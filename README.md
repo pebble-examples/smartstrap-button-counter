@@ -1,5 +1,7 @@
 # smartstrap-button-counter
 
+> Note: This example will not build until SDK 3.4 is available.
+
 ![screenshot](pebble/screenshot.png)
 
 This is a smartstrap example project that displays how many times a button
