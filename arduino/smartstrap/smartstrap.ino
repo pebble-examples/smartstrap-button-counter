@@ -22,12 +22,12 @@ void setup() {
 
 void loop() {
   size_t length;
-  bool is_read;
+  RequestType type;
   uint16_t service_id;
   uint16_t attribute_id;
   
   // Check for frames, though none are expected for this app
-  ArduinoPebbleSerial::feed(&service_id, &attribute_id, &length, &is_read);
+  ArduinoPebbleSerial::feed(&service_id, &attribute_id, &length, &type);
 
   // If the button is pressed...
   if(digitalRead(BUTTON_PIN) == HIGH) {
