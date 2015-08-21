@@ -17,7 +17,7 @@ void setup() {
   
   // Setup the Pebble smartstrap connection using one wire software serial
   ArduinoPebbleSerial::begin_software(DATA_PIN, s_data_buffer, sizeof(s_data_buffer),
-                                      Baud9600, s_service_ids, 1);
+                                      Baud57600, s_service_ids, 1);
 }
 
 void loop() {
