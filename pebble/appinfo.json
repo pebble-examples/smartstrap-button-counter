@@ -1,0 +1,18 @@
+{
+  "uuid": "5FB59B2F-A4CC-4148-A3F0-A5424261EACA",
+  "shortName": "Smartstrap Button Counter",
+  "longName": "Smartstrap Button Counter",
+  "companyName": "Pebble",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["basalt"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
