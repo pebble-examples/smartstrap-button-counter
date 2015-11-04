@@ -51,7 +51,7 @@ static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  s_output_layer = text_layer_create(GRect(0, 0, bounds.size.w, bounds.size.h));
+  s_output_layer = text_layer_create(GRect(bounds.origin.x, PBL_IF_ROUND_ELSE(20, bounds.origin.y), bounds.size.w, bounds.size.h));
   text_layer_set_font(s_output_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
   text_layer_set_text_alignment(s_output_layer, GTextAlignmentCenter);
   text_layer_set_text_color(s_output_layer, GColorWhite);
